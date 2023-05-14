@@ -21,6 +21,7 @@ const Login = () => {
       const { data } = await Auth.login(input);
       if (data) {
         const { accessToken } = data;
+        console.log(accessToken);
         toast.success("Đăng nhập thành công");
         localStorage.setItem(TOKEN_AUTHENTICATION, accessToken);
         navigate("/admin/statistics");
@@ -40,7 +41,7 @@ const Login = () => {
         >
           <div className="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4">
             <form
-              className="bg-secondary rounded p-4 p-sm-5 my-4 mx-3"
+              className="bg-white rounded p-4 p-sm-5 my-4 mx-3"
               onSubmit={handleSubmit(login)}
             >
               <div className="d-flex align-items-center justify-content-between mb-3">

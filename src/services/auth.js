@@ -6,7 +6,7 @@ class Auth {
     return instance.post("/auth/login", { username, password });
   }
   profile() {
-    return instance.get("/auth/profile");
+    return instance.get("/auth/getUserByToken");
   }
 }
 

@@ -15,14 +15,9 @@ const menuList = [
     icon: "fa fa-keyboard me-2",
   },
   {
-    url: "/admin/account",
+    url: "/admin/users",
     name: "Quản lý tài khoản",
     icon: "fa fa-table me-2",
-  },
-  {
-    url: "/admin/users",
-    name: "Quản lý nhân viên",
-    icon: "fa fa-chart-bar me-2",
   },
 ];
 
